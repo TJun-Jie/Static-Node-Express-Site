@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/TJun-Jie/Static-Node-Express-Site/issues"
   },
-  "homepage": "https://github.com/TJun-Jie/Static-Node-Express-Site#readme"
+  "homepage": "https://github.com/TJun-Jie/Static-Node-Express-Site#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^3.0.0"
+  }
 }

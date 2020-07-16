@@ -1,0 +1,19 @@
+{
+  "name": "static-node-express-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TJun-Jie/Static-Node-Express-Site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TJun-Jie/Static-Node-Express-Site/issues"
+  },
+  "homepage": "https://github.com/TJun-Jie/Static-Node-Express-Site#readme"
+}

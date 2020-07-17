@@ -16,22 +16,11 @@ block content
 
       //- Use the Pug `each` iterator to create a project img, title and link in the markup for each of the projects you are showcasing.  
       each project in projects
-        article.grid-container.portfolio-intro.portfolio-project
-          .grid-x
-            .cell.small-6.medium-9.large-9
-              h1=project.project_name
-              p.lead.text-light
-                | #{project.description}
-            .cell.portfolio-meta.small-6.medium-2.large-3
-              h6 Technologies
-              ul
-                each technology in project['technologies']
-                  li=technology
-              a.button.expanded(href=`${project.live_link}`) Live Demo
-              a.button.expanded(href=`${project.github_link}`) GitHub Repo
-          img.image(src=`/static/images/Project${project.id}-1.PNG`)
-          img.image(src=`/static/images/Project${project.id}-2.PNG`)
-          img.image(src=`/static/images/Project${project.id}-3.PNG`)
+        .cell
+          a(href=`projects/${project.id}`)
+            img.thumbnail(src=`/static/images/Project${project.id}-1.PNG`)
+            h5=project.project_name
+
       
       //- Use a combination of interpolation and template literals as needed to dynamically generate the the routes in the href, as well as the img's src and the projects title.
       

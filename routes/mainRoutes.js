@@ -16,7 +16,7 @@ router.get('/about',  (req, res) => {
 
 router.get('/projects/:id',  (req, res) => {
     const id  = req.params.id
-    res.render('project')
+    res.render('project', {projects})
 })
 
 

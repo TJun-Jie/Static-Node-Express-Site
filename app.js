@@ -1,5 +1,4 @@
 const express = require('express');
-const data = require('./public/data.json');
 const app = express();
 const router = require('./routes/mainRoutes');
 

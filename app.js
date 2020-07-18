@@ -31,6 +31,6 @@ app.use( (err, req, res, next) => {
 
 const port = 3000;
 // Starts a server and listen on port 3000 locally
-app.listen(port, () => {
+app.listen( process.env.PORT || port, () => {
     console.log(`App listening on port ${port} at localhost:${port}`)
 })

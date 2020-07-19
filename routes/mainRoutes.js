@@ -16,9 +16,16 @@ router.get('/about',  (req, res) => {
 })
 
 // Projects route
-router.get('/projects/:id',  (req, res) => {
+router.get('/projects/:id',  (req, res,next) => {
     const id  = req.params.id
-    res.render('project', {projects: projects, id: id})
+    if(projects[id]) {
+        res.render('project', {projects: projects, id: id})
+    } else {
+        const err =  new Error('Sorry project could not be found')
+        err.status = 404;
+        // pass error to global error handler
+        next(err)
+    }
 })
 
 

@@ -27,6 +27,8 @@ app.use( (err, req, res, next) => {
     res.status(err.status);
     // Render error page
     res.render('error', {err: err})
+    // console log error
+    console.log(err)
 })
 
 const port = 3000;

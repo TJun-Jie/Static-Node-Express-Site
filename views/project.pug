@@ -14,9 +14,10 @@ block content
         ul
           each technology in projects[id-1].technologies
             li=technology
-        
+        //- Link to live and github
         a.button.expanded(href=`${projects[id-1].live_link}`) Live Demo
         a.button.expanded(href=`${projects[id-1].github_link}`) GitHub Repo
+    //- Images
     img.image(src=`${projects[id-1].image_urls[1]}`)
     img.image(src=`${projects[id-1].image_urls[2]}`)
     img.image(src=`${projects[id-1].image_urls[3]}`)

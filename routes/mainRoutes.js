@@ -18,8 +18,9 @@ router.get('/about',  (req, res) => {
 // Projects route
 router.get('/projects/:id',  (req, res,next) => {
     const id  = req.params.id
-    if(projects[id]) {
+    if(projects[id-1]) {
         res.render('project', {projects: projects, id: id})
+        // Cannot find project eg.http://localhost:3000/projects/20
     } else {
         const err =  new Error('Sorry project could not be found')
         err.status = 404;
